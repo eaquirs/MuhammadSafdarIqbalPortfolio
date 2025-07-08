@@ -7,12 +7,14 @@ import Home from "@/pages/Home";
 import Project from "@/pages/Project";
 import NotFound from "@/pages/not-found";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Contact from "@/pages/Contact";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/project/:id" component={Project} />
+      <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
   );
