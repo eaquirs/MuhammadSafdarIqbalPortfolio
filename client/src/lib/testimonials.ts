@@ -9,7 +9,7 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     name: "Ahmed Hassan",
-    role: "CEO, Dubai Tech Solutions",
+    role: "CEO, UAE Tech Solutions",
     content: "Muhammad delivered an exceptional ERP solution that transformed our business operations. His technical expertise and attention to detail are remarkable.",
     initials: "AH",
     avatarBg: "bg-blue-600"

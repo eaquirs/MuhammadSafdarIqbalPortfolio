@@ -482,8 +482,48 @@ This project demonstrates my unique ability to:
     ],
   },
 
-  
-//pos
+  {
+    id: "erp-recovery-system",
+    title: "ERP Recovery System",
+    description:
+      "Enterprise solution deployed in UAE for employee recruitment, payment processing, and workforce management.",
+    fullDescription:
+      "A comprehensive ERP system developed for international deployment in UAE, focusing on workforce management, recruitment processes, and financial operations. Built to handle multi-currency transactions and compliance with UAE regulations.",
+    image:
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    technologies: [
+      "ASP.NET Core",
+      "Azure",
+      "SQL Server",
+      "SignalR",
+      "Entity Framework",
+    ],
+    features: [
+      "Employee recruitment workflow",
+      "Multi-currency payment processing",
+      "Workforce analytics and reporting",
+      "Document management system",
+      "Compliance tracking for UAE regulations",
+      "Real-time notifications",
+      "Multi-language support (English/Arabic)",
+      "Role-based access control",
+    ],
+    challenges: [
+      {
+        challenge:
+          "Handling multi-currency transactions and exchange rate fluctuations",
+        solution:
+          "Implemented a robust currency conversion system with real-time exchange rates and proper financial reconciliation",
+      },
+      {
+        challenge: "Compliance with UAE labor laws and regulations",
+        solution:
+          "Collaborated with legal experts to ensure all workflows meet UAE employment standards and regulations",
+      },
+    ],
+    liveUrl: "https://erp-uae.com",
+  },
+
   {
     id: "pos-system",
     title: "X2 Universal POS System - Multi-Industry Solution",
@@ -831,47 +871,6 @@ This project demonstrates my ability to:
           "Created a hardware abstraction layer that supports multiple pump manufacturers and sensor types",
       },
     ],
-  },
-  {
-    id: "erp-recovery-system",
-    title: "ERP Recovery System",
-    description:
-      "Enterprise solution deployed in UAE for employee recruitment, payment processing, and workforce management.",
-    fullDescription:
-      "A comprehensive ERP system developed for international deployment in UAE, focusing on workforce management, recruitment processes, and financial operations. Built to handle multi-currency transactions and compliance with UAE regulations.",
-    image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: [
-      "ASP.NET Core",
-      "Azure",
-      "SQL Server",
-      "SignalR",
-      "Entity Framework",
-    ],
-    features: [
-      "Employee recruitment workflow",
-      "Multi-currency payment processing",
-      "Workforce analytics and reporting",
-      "Document management system",
-      "Compliance tracking for UAE regulations",
-      "Real-time notifications",
-      "Multi-language support (English/Arabic)",
-      "Role-based access control",
-    ],
-    challenges: [
-      {
-        challenge:
-          "Handling multi-currency transactions and exchange rate fluctuations",
-        solution:
-          "Implemented a robust currency conversion system with real-time exchange rates and proper financial reconciliation",
-      },
-      {
-        challenge: "Compliance with UAE labor laws and regulations",
-        solution:
-          "Collaborated with legal experts to ensure all workflows meet UAE employment standards and regulations",
-      },
-    ],
-    liveUrl: "https://erp-uae.com",
   },
   {
     id: "wordpress-ecommerce-store",

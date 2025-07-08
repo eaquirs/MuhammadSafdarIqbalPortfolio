@@ -79,12 +79,6 @@ export const skills: SkillCategory[] = [
         level: "Expert",
         icon: Code,
         iconColor: "text-blue-400"
-      },
-      {
-        name: "PHP",
-        level: "Advanced",
-        icon: SiPhp,
-        iconColor: "text-purple-400"
       }
     ]
   },

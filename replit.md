@@ -94,7 +94,7 @@ Preferred communication style: Simple, everyday language.
 - July 02, 2025: Fixed dropdown visibility in contact form for Project Type and Budget Range
 - July 02, 2025: Fixed testimonial names visibility with proper text styling
 - July 02, 2025: Added Mobile Development skills category featuring .NET MAUI expertise
-- July 02, 2025: Added two new mobile app projects: Dubai Business Management and Real Estate Mobile App
+- July 02, 2025: Added two new mobile app projects: UAE Business Management and Real Estate Mobile App
 - July 02, 2025: Enhanced Hero section with customer-focused messaging and achievement statistics
 - July 02, 2025: Improved About section with business-value focused content and proven track record
 - July 02, 2025: Implemented comprehensive dark/light theme toggle system with smooth transitions
@@ -107,7 +107,7 @@ The portfolio now showcases 10 comprehensive projects:
 1. Real Estate Management System (MERN Stack)
 2. Gman Stitching Platform (MERN + Docker on VPS)
 3. Eye Hospital Management System (C# .NET)
-4. ERP Recovery System (Dubai deployment)
+4. ERP Recovery System (UAE deployment)
 5. Factory Management Suite (4-tier accounting)
 6. Universal POS System (Multi-business support)
 7. Fuel Station Management (IoT integration)

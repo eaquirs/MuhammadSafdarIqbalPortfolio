@@ -5,7 +5,7 @@ import { projects } from "@/lib/projects";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ExternalLink, Github } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -72,21 +72,6 @@ export default function Project() {
                   {tech}
                 </Badge>
               ))}
-            </div>
-
-            <div className="flex gap-4 mb-8">
-              {project.liveUrl && (
-                <Button className="bg-blue-600 hover:bg-blue-700">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  View Live
-                </Button>
-              )}
-              {project.githubUrl && (
-                <Button variant="outline" className="border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">
-                  <Github className="w-4 h-4 mr-2" />
-                  View Code
-                </Button>
-              )}
             </div>
           </div>
         </div>
