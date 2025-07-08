@@ -4,6 +4,11 @@
     {
       "src": "server/index.ts",
       "use": "@vercel/node"
+    },
+    {
+      "src": "client/**",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
     }
   ],
   "routes": [
@@ -13,12 +18,8 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/client/index.html"
+      "dest": "/client/dist/index.html",
+      "continue": true
     }
-  ],
-  "functions": {
-    "server/index.ts": {
-      "includeFiles": ["client/dist/**"]
-    }
-  }
+  ]
 }
