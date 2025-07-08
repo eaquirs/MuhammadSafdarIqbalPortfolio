@@ -1,13 +1,10 @@
 import type { Config } from "tailwindcss";
 
-// Properly structured Tailwind CSS configuration. The previous file had an early closing brace which
-// caused the remainder of the configuration object to be parsed as top-level JavaScript, leading to
-// a Sucrase parser error when Tailwind attempted to load the config.
 const config = {
   darkMode: ["class"],
   content: [
-    "./client/index.html",
-    "./client/src/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     container: {
@@ -94,4 +91,4 @@ const config = {
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config;
 
-export default config;
+export default config; 
