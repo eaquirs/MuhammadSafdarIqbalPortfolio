@@ -29,7 +29,7 @@ export default function Projects() {
           </p>
         </motion.div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -37,6 +37,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
+              className="h-full"
             >
               <ProjectCard project={project} />
             </motion.div>
