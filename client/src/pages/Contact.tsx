@@ -56,15 +56,15 @@ export default function Contact() {
           <div className="space-y-4 w-full">
             <a href="tel:+923001234567" className="flex items-center text-slate-700 dark:text-slate-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors font-medium group">
               <Phone className="w-5 h-5 text-blue-500 dark:text-blue-400 mr-3 group-hover:scale-110 transition-transform" />
-              +92 300 1234567
+              +92 332 2060667
             </a>
             <a href="mailto:safdar@email.com" className="flex items-center text-slate-700 dark:text-slate-200 hover:text-blue-500 dark:hover:text-blue-400 transition-colors font-medium group">
               <Mail className="w-5 h-5 text-blue-500 dark:text-blue-400 mr-3 group-hover:scale-110 transition-transform" />
-              safdar@email.com
+              eaquirseaquirs@gmail.com
             </a>
             <div className="flex items-center text-slate-700 dark:text-slate-200 font-medium">
               <MapPin className="w-5 h-5 text-blue-500 dark:text-blue-400 mr-3" />
-              Lahore, Pakistan
+              Bahawalpur, Pakistan
             </div>
           </div>
         </div>
