@@ -1259,6 +1259,7 @@ From my enterprise implementations:
 
 ## Advanced MERN Architecture Patterns
 
+
 ### 1. Microservices with MERN
 \`\`\`javascript
 // Service-oriented architecture
