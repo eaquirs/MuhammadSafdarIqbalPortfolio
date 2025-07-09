@@ -110,7 +110,7 @@ export default function Hero() {
             <div className="text-sm text-slate-400">Projects Delivered</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-green-400">12</div>
+            <div className="text-3xl font-bold text-green-400">9</div>
             <div className="text-sm text-slate-400">Featured Here</div>
           </div>
           <div className="text-center">
