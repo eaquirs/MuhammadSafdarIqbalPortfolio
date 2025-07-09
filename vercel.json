@@ -3,7 +3,6 @@
   "outputDirectory": "client/dist",
   "installCommand": "cd client && npm install",
   "framework": "vite",
-  "nodeVersion": "18.x",
   "rewrites": [
     {
       "source": "/(.*)",
