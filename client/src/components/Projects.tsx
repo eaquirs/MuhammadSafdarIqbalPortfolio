@@ -69,9 +69,24 @@ Looking forward to learning more about how you can help my business!`;
         >
           <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-white">Featured Projects</h2>
           <div className="w-24 h-1 bg-blue-400 mx-auto mb-6"></div>
-          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-6">
             Explore my portfolio of successful projects, from enterprise solutions to innovative web applications
           </p>
+          
+          {/* Blog CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 px-6 py-3 rounded-full border border-blue-200 dark:border-slate-600 hover:shadow-lg transition-all duration-300 group cursor-pointer"
+            onClick={() => window.location.href = '/blog'}
+          >
+            <MessageCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+            <span className="text-slate-700 dark:text-slate-300 font-medium">Read detailed case studies & insights</span>
+            <Badge className="bg-blue-600 text-white">New!</Badge>
+            <TrendingUp className="w-4 h-4 text-blue-600 dark:text-blue-400 transition-transform group-hover:translate-x-1" />
+          </motion.div>
         </motion.div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">

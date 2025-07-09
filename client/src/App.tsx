@@ -5,6 +5,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Home from "@/pages/Home";
 import Project from "@/pages/Project";
+import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
 import NotFound from "@/pages/not-found";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Contact from "@/pages/Contact";
@@ -14,6 +16,8 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/project/:id" component={Project} />
+      <Route path="/blog" component={Blog} />
+      <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
