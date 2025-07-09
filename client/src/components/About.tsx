@@ -52,7 +52,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <img
-              src="p5.png"
+              src="/p5.png"
               alt="Muhammad Safdar Iqbal - Professional Developer"
               className="rounded-2xl shadow-lg w-full max-w-md mx-auto bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-slate-800 dark:to-slate-700 p-2"
             />

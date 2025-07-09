@@ -148,12 +148,48 @@ Best regards,
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          <div>
-            <img 
-              src={project.image} 
-              alt={project.title}
-              className="w-full rounded-xl shadow-lg"
-            />
+          <div className="relative group">
+            {/* Enhanced Image Container with Professional Styling */}
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-800 aspect-[4/3]">
+              <img 
+                src={project.image} 
+                alt={project.title}
+                loading="lazy"
+                className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+              />
+              
+              {/* Professional Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              
+              {/* Floating Tech Stack Indicator */}
+              <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform -translate-y-2 group-hover:translate-y-0">
+                <div className="bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-lg px-3 py-2 border border-white/50 dark:border-slate-600/50">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span className="text-xs font-medium text-slate-700 dark:text-slate-300">
+                      {project.technologies.length} Technologies
+                    </span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Project Status Badge */}
+              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform -translate-y-2 group-hover:translate-y-0">
+                <div className="bg-blue-500/90 backdrop-blur-sm rounded-full px-3 py-1 border border-blue-400/50">
+                  <span className="text-xs font-semibold text-white">Live Project</span>
+                </div>
+              </div>
+              
+              {/* Bottom Gradient Border */}
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-center"></div>
+            </div>
+            
+            {/* Professional Caption */}
+            <div className="mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <p className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                Professional solution built with modern technologies
+              </p>
+            </div>
           </div>
 
           <div>
