@@ -8,25 +8,25 @@ export default function About() {
       icon: Code,
       title: "Clean Code",
       description: "Maintainable & Scalable",
-      color: "text-blue-400",
+      color: "text-green-400",
     },
     {
       icon: Clock,
       title: "On-Time Delivery",
       description: "Reliable & Professional",
-      color: "text-green-400",
+      color: "text-blue-400",
     },
     {
       icon: Handshake,
       title: "Client-Focused",
       description: "Understanding Your Needs",
-      color: "text-blue-400",
+      color: "text-green-400",
     },
     {
       icon: Rocket,
       title: "Innovation",
       description: "Cutting-Edge Solutions",
-      color: "text-green-400",
+      color: "text-blue-400",
     },
   ];
 
@@ -40,8 +40,8 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <div className="w-24 h-1 bg-blue-400 mx-auto"></div>
+          <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-white">About Me</h2>
+          <div className="w-24 h-1 bg-green-400 mx-auto"></div>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -54,7 +54,7 @@ export default function About() {
             <img
               src="/p5.png"
               alt="Muhammad Safdar Iqbal - Professional Developer"
-              className="rounded-2xl shadow-lg w-full max-w-md mx-auto bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-slate-800 dark:to-slate-700 p-2"
+              className="rounded-2xl shadow-lg w-full max-w-md mx-auto bg-gradient-to-br from-green-50 to-blue-100 dark:from-slate-800 dark:to-slate-700 p-2"
             />
           </motion.div>
 
@@ -65,7 +65,7 @@ export default function About() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-2xl font-semibold text-blue-600 dark:text-blue-400">
+            <h3 className="text-2xl font-semibold text-green-600 dark:text-green-400">
               Your Trusted Technology Partner
             </h3>
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -77,7 +77,7 @@ export default function About() {
             </p>
 
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              <strong className="text-blue-600 dark:text-blue-400">
+              <strong className="text-green-600 dark:text-green-400">
                 Proven Track Record:
               </strong>{" "}
               I have successfully delivered projects for a diverse range of
@@ -98,8 +98,8 @@ export default function About() {
                   className="bg-white dark:bg-slate-900 p-4 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors duration-300 border border-slate-200 dark:border-slate-700"
                 >
                   <feature.icon className={`${feature.color} text-2xl mb-2`} />
-                  <h4 className="font-semibold">{feature.title}</h4>
-                  <p className="text-sm text-slate-400">
+                  <h4 className="font-semibold text-slate-900 dark:text-white">{feature.title}</h4>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">
                     {feature.description}
                   </p>
                 </motion.div>

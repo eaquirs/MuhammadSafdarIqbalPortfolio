@@ -35,9 +35,14 @@ export default function Hero() {
               Muhammad Safdar Iqbal
             </span>
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-slate-700 dark:text-slate-300">
-            Full-Stack MERN Developer & .NET Specialist
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-slate-700 dark:text-slate-300">
+            <span className="bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent">
+              Expert MERN Stack Developer
+            </span>
           </h2>
+          <h3 className="text-lg md:text-xl font-medium mb-8 text-slate-600 dark:text-slate-400">
+            Modern Web Applications • Enterprise Solutions • .NET Development
+          </h3>
         </motion.div>
         
         <motion.p
@@ -46,8 +51,10 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto leading-relaxed"
         >
-          7+ years delivering enterprise-grade solutions that drive business growth. 
-          From government projects to international mobile apps, I build scalable systems that exceed expectations.
+          7+ years crafting scalable <strong className="text-green-600 dark:text-green-400">React</strong>, 
+          <strong className="text-green-600 dark:text-green-400"> Node.js</strong>, and 
+          <strong className="text-green-600 dark:text-green-400"> MongoDB</strong> applications. 
+          Building modern web solutions that drive business growth and exceptional user experiences.
         </motion.p>
         
         <motion.div
@@ -58,12 +65,12 @@ export default function Hero() {
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
             <div className="bg-white/50 dark:bg-slate-800/50 rounded-lg p-4 border border-slate-200 dark:border-slate-700">
-              <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">50+</div>
-              <div className="text-sm text-slate-600 dark:text-slate-400">Projects Delivered</div>
+              <div className="text-2xl font-bold text-green-600 dark:text-green-400">50+</div>
+              <div className="text-sm text-slate-600 dark:text-slate-400">MERN Projects</div>
             </div>
             <div className="bg-white/50 dark:bg-slate-800/50 rounded-lg p-4 border border-slate-200 dark:border-slate-700">
-              <div className="text-2xl font-bold text-green-600 dark:text-green-400">100%</div>
-              <div className="text-sm text-slate-600 dark:text-slate-400">Customer Satisfaction</div>
+              <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">100%</div>
+              <div className="text-sm text-slate-600 dark:text-slate-400">Client Satisfaction</div>
             </div>
             <div className="bg-white/50 dark:bg-slate-800/50 rounded-lg p-4 border border-slate-200 dark:border-slate-700">
               <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">7+</div>
@@ -81,7 +88,7 @@ export default function Hero() {
           <Button
             onClick={() => scrollToSection("projects")}
             size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white animate-glow"
+            className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white animate-glow"
           >
             <Rocket className="w-5 h-5 mr-2" />
             View My Projects
@@ -90,7 +97,7 @@ export default function Hero() {
             asChild
             variant="outline"
             size="lg"
-            className="border-blue-500 text-blue-400 hover:bg-blue-500/10"
+            className="border-green-500 text-green-600 hover:bg-green-500/10 dark:text-green-400"
           >
             <Link href="/contact">
               <Mail className="w-5 h-5 mr-2" />
@@ -106,16 +113,16 @@ export default function Hero() {
           className="mt-16 flex justify-center space-x-6"
         >
           <div className="text-center">
-            <div className="text-3xl font-bold text-blue-400">50+</div>
-            <div className="text-sm text-slate-400">Projects Delivered</div>
+            <div className="text-3xl font-bold text-green-400">React</div>
+            <div className="text-sm text-slate-400">Frontend Expert</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-green-400">9</div>
-            <div className="text-sm text-slate-400">Featured Here</div>
+            <div className="text-3xl font-bold text-blue-400">Node.js</div>
+            <div className="text-sm text-slate-400">Backend Specialist</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-purple-400">5+</div>
-            <div className="text-sm text-slate-400">Industries Served</div>
+            <div className="text-3xl font-bold text-purple-400">MongoDB</div>
+            <div className="text-sm text-slate-400">Database Pro</div>
           </div>
         </motion.div>
       </div>

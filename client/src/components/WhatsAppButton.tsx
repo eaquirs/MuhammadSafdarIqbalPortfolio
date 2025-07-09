@@ -41,9 +41,9 @@ export default function WhatsAppButton() {
         <div className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-30"></div>
         
         {/* Tooltip */}
-        <div className="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-slate-800 dark:bg-white text-white dark:text-slate-800 px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+        <div className="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-slate-800 dark:bg-slate-200 text-white dark:text-slate-800 px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
           Chat on WhatsApp
-          <div className="absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-slate-800 dark:border-l-white"></div>
+          <div className="absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-slate-800 dark:border-l-slate-200"></div>
         </div>
       </motion.button>
     </motion.div>

@@ -68,7 +68,7 @@ Looking forward to learning more about how you can help my business!`;
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-white">Featured Projects</h2>
-          <div className="w-24 h-1 bg-blue-400 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-green-400 mx-auto mb-6"></div>
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-6">
             Explore my portfolio of successful projects, from enterprise solutions to innovative web applications
           </p>

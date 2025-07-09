@@ -54,7 +54,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-blue-600 dark:text-blue-400">Muhammad Safdar Iqbal</h1>
+            <h1 className="text-xl font-bold text-green-600 dark:text-green-400">Muhammad Safdar Iqbal</h1>
           </div>
           
           {/* Desktop Navigation */}
@@ -65,7 +65,7 @@ export default function Navigation() {
                   <Link
                     key={item.id}
                     href={item.href}
-                    className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 text-slate-700 dark:text-slate-300"
+                    className="hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300 text-slate-700 dark:text-slate-300"
                   >
                     {item.label}
                   </Link>
@@ -73,7 +73,7 @@ export default function Navigation() {
                   <button
                     key={item.id}
                     onClick={() => handleNavClick(item.id)}
-                    className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 text-slate-700 dark:text-slate-300"
+                    className="hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300 text-slate-700 dark:text-slate-300"
                   >
                     {item.label}
                   </button>
@@ -90,7 +90,7 @@ export default function Navigation() {
               variant="ghost"
               size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400"
+              className="text-slate-700 dark:text-slate-300 hover:text-green-600 dark:hover:text-green-400"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -106,7 +106,7 @@ export default function Navigation() {
                   <Link
                     key={item.id}
                     href={item.href}
-                    className="block w-full text-left px-3 py-2 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+                    className="block w-full text-left px-3 py-2 text-slate-700 dark:text-slate-300 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}
@@ -115,7 +115,7 @@ export default function Navigation() {
                   <button
                     key={item.id}
                     onClick={() => handleNavClick(item.id)}
-                    className="block w-full text-left px-3 py-2 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+                    className="block w-full text-left px-3 py-2 text-slate-700 dark:text-slate-300 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300"
                   >
                     {item.label}
                   </button>
