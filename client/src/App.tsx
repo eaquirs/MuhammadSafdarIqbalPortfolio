@@ -29,14 +29,13 @@ function App() {
 
       <ThemeProvider>
         <TooltipProvider>
-          <div className="min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors duration-300">
+          <div className="min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors duration-300 container-safe">
             <Toaster />
             <Router />
             <WhatsAppButton />
           </div>
         </TooltipProvider>
       </ThemeProvider>
-
   );
 }
 

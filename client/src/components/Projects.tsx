@@ -58,7 +58,7 @@ Looking forward to learning more about how you can help my business!`;
   };
 
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-slate-900">
+    <section id="projects" className="py-20 bg-white dark:bg-slate-900 container-safe">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -69,7 +69,7 @@ Looking forward to learning more about how you can help my business!`;
         >
           <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-white">Featured Projects</h2>
           <div className="w-24 h-1 bg-green-400 mx-auto mb-6"></div>
-          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-6">
+          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-6 text-responsive">
             Explore my portfolio of successful projects, from enterprise solutions to innovative web applications
           </p>
           
@@ -79,25 +79,25 @@ Looking forward to learning more about how you can help my business!`;
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 px-6 py-3 rounded-full border border-blue-200 dark:border-slate-600 hover:shadow-lg transition-all duration-300 group cursor-pointer"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 px-4 sm:px-6 py-3 rounded-full border border-blue-200 dark:border-slate-600 hover:shadow-lg transition-all duration-300 group cursor-pointer max-w-full"
             onClick={() => window.location.href = '/blog'}
           >
-            <MessageCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-            <span className="text-slate-700 dark:text-slate-300 font-medium">Read detailed case studies & insights</span>
-            <Badge className="bg-blue-600 text-white">New!</Badge>
-            <TrendingUp className="w-4 h-4 text-blue-600 dark:text-blue-400 transition-transform group-hover:translate-x-1" />
+            <MessageCircle className="w-4 sm:w-5 h-4 sm:h-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+            <span className="text-slate-700 dark:text-slate-300 font-medium text-sm sm:text-base text-responsive">Read detailed case studies & insights</span>
+            <Badge className="bg-blue-600 text-white text-xs sm:text-sm flex-shrink-0">New!</Badge>
+            <TrendingUp className="w-3 sm:w-4 h-3 sm:h-4 text-blue-600 dark:text-blue-400 transition-transform group-hover:translate-x-1 flex-shrink-0" />
           </motion.div>
         </motion.div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
-          {projects.map((project, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
+          {projects.slice(0, 6).map((project, index) => (
             <motion.div
               key={project.id}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="h-full"
+              className="w-full"
             >
               <ProjectCard project={project} />
             </motion.div>

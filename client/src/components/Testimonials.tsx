@@ -112,40 +112,40 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative"
+          className="relative container-safe"
         >
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex">
+          <div className="overflow-hidden w-full" ref={emblaRef}>
+            <div className="flex -ml-2 sm:-ml-4">
               {testimonials.map((testimonial, index) => {
                 const IconComponent = getIndustryIcon(testimonial.industry);
                 return (
-                  <div key={index} className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] pl-4">
-                    <Card className="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 shadow-lg hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-300 h-full flex flex-col mx-2">
-                      <CardContent className="p-6 flex flex-col h-full">
+                  <div key={index} className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] pl-2 sm:pl-4">
+                    <Card className="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 shadow-lg hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-300 h-full flex flex-col mx-1 sm:mx-2">
+                      <CardContent className="p-4 sm:p-6 flex flex-col h-full">
                         {/* Header with Industry Icon and Stars */}
                         <div className="flex items-center justify-between mb-4">
                           <div className="flex items-center space-x-2">
                             <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg transition-colors duration-300">
                               <IconComponent className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                             </div>
-                            <Badge variant="secondary" className="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
+                            <Badge variant="secondary" className="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hidden sm:inline-flex">
                               {testimonial.industry}
                             </Badge>
                           </div>
                           <div className="flex text-yellow-400">
                             {[...Array(5)].map((_, i) => (
-                              <Star key={i} className="w-4 h-4 fill-current" />
+                              <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-current" />
                             ))}
                           </div>
                         </div>
 
                         {/* Project Type and Result Metric */}
                         <div className="mb-4">
-                          <div className="flex items-center justify-between text-sm mb-2">
-                            <span className="font-medium text-blue-600 dark:text-blue-400">{testimonial.projectType}</span>
-                            <div className="flex items-center text-green-600 dark:text-green-400">
+                          <div className="flex items-center justify-between text-sm mb-2 gap-2">
+                            <span className="font-medium text-blue-600 dark:text-blue-400 text-xs sm:text-sm truncate">{testimonial.projectType}</span>
+                            <div className="flex items-center text-green-600 dark:text-green-400 flex-shrink-0">
                               <TrendingUp className="w-3 h-3 mr-1" />
-                              <span className="font-semibold">{testimonial.resultMetric}</span>
+                              <span className="font-semibold text-xs sm:text-sm">{testimonial.resultMetric}</span>
                             </div>
                           </div>
                           {/* Relationship Badge */}
@@ -159,21 +159,21 @@ export default function Testimonials() {
 
                         {/* Testimonial Content */}
                         <div className="relative mb-6 flex-grow">
-                          <Quote className="absolute -top-2 -left-1 w-6 h-6 text-blue-200 dark:text-blue-800" />
-                          <p className="text-slate-600 dark:text-slate-300 leading-relaxed pl-6 italic text-sm">
+                          <Quote className="absolute -top-2 -left-1 w-5 h-5 sm:w-6 sm:h-6 text-blue-200 dark:text-blue-800" />
+                          <p className="text-slate-600 dark:text-slate-300 leading-relaxed pl-4 sm:pl-6 italic text-xs sm:text-sm text-responsive">
                             {testimonial.content}
                           </p>
                         </div>
 
                         {/* Client Information */}
                         <div className="flex items-center mt-auto">
-                          <div className={`w-12 h-12 ${testimonial.avatarBg} rounded-full flex items-center justify-center text-white font-bold mr-4 shadow-lg`}>
+                          <div className={`w-10 h-10 sm:w-12 sm:h-12 ${testimonial.avatarBg} rounded-full flex items-center justify-center text-white font-bold mr-3 sm:mr-4 shadow-lg text-sm sm:text-base flex-shrink-0`}>
                             {testimonial.initials}
                           </div>
-                          <div className="flex-grow">
-                            <div className="font-semibold text-slate-900 dark:text-slate-200">{testimonial.name}</div>
-                            <div className="text-sm text-slate-600 dark:text-slate-400">{testimonial.role}</div>
-                            <div className="text-xs text-blue-600 dark:text-blue-400 font-medium">{testimonial.company}</div>
+                          <div className="flex-grow min-w-0">
+                            <div className="font-semibold text-slate-900 dark:text-slate-200 text-sm sm:text-base truncate">{testimonial.name}</div>
+                            <div className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 truncate">{testimonial.role}</div>
+                            <div className="text-xs text-blue-600 dark:text-blue-400 font-medium truncate">{testimonial.company}</div>
                           </div>
                         </div>
                       </CardContent>
