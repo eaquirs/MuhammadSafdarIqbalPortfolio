@@ -31,6 +31,7 @@ import {
   type BlogPost,
   type BlogCategory 
 } from "@/lib/blog";
+import { Helmet } from "react-helmet-async";
 
 export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -85,8 +86,23 @@ export default function Blog() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-900">
-      <Navigation />
+    <>
+      <Helmet>
+        <title>Enterprise Insights Blog | Muhammad Safdar Iqbal</title>
+        <meta name="description" content="Strategic technology insights, proven methodologies, and real-world case studies from Pakistan's leading enterprise software architect." />
+        <link rel="canonical" href="https://your-portfolio-domain.com/blog" />
+        <meta property="og:title" content="Enterprise Insights Blog | Muhammad Safdar Iqbal" />
+        <meta property="og:description" content="Strategic technology insights, proven methodologies, and real-world case studies from Pakistan's leading enterprise software architect." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://your-portfolio-domain.com/blog" />
+        <meta property="og:image" content="https://your-portfolio-domain.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Enterprise Insights Blog | Muhammad Safdar Iqbal" />
+        <meta name="twitter:description" content="Strategic technology insights, proven methodologies, and real-world case studies from Pakistan's leading enterprise software architect." />
+        <meta name="twitter:image" content="https://your-portfolio-domain.com/og-image.png" />
+      </Helmet>
+      <div className="min-h-screen bg-white dark:bg-slate-900" id="main-content">
+        <Navigation />
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
@@ -384,6 +400,7 @@ export default function Blog() {
       </section>
 
       <Footer />
-    </div>
+      </div>
+    </>
   );
 } 

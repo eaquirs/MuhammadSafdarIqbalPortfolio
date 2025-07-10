@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Eye, Code, Zap } from "lucide-react";
+import { ExternalLink, Eye, Code } from "lucide-react";
 import { Link } from "wouter";
 import type { Project } from "@/lib/projects";
 
