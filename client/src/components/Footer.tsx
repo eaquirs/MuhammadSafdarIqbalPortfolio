@@ -85,10 +85,10 @@ export default function Footer() {
           </div>
           
           <div className="flex items-center space-x-6">
-            <span className="text-slate-600 dark:text-slate-400 text-sm flex items-center text-responsive">
+            {/* <span className="text-slate-600 dark:text-slate-400 text-sm flex items-center text-responsive">
               <Heart className="w-4 h-4 text-red-500 mr-1 flex-shrink-0" />
               Made with passion in Pakistan
-            </span>
+            </span> */}
           </div>
         </div>
       </div>
