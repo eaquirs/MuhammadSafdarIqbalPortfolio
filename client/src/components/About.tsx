@@ -53,7 +53,7 @@ export default function About() {
             className="order-2 lg:order-1"
           >
             <img
-              src="/p5.png"
+              src="/p5.avif"
               alt="Muhammad Safdar Iqbal - Professional Developer"
               className="rounded-2xl shadow-lg w-full max-w-md mx-auto bg-gradient-to-br from-green-50 to-blue-100 dark:from-slate-800 dark:to-slate-700 p-2"
             />

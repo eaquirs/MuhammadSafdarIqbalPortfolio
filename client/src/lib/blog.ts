@@ -358,7 +358,7 @@ module.exports = {
     readTime: 15,
     author: {
       name: "Muhammad Safdar Iqbal",
-      avatar: "/p5.png", 
+      avatar: "/p5.avif", 
       bio: "Senior MERN Stack Architect"
     },
     category: blogCategories[2], // technology-insights
@@ -1125,7 +1125,7 @@ const userRateLimiter = rateLimit({
     readTime: 20,
     author: {
       name: "Muhammad Safdar Iqbal",
-      avatar: "/p5.png",
+      avatar: "/p5.avif",
       bio: "Backend Architecture Specialist"
     },
     category: blogCategories[2], // technology-insights
@@ -1162,7 +1162,7 @@ const userRateLimiter = rateLimit({
     author: {
       name: "Muhammad Safdar Iqbal",
       bio: "Enterprise Software Architect & Government Technology Contractor",
-      avatar: "/p5.png"
+      avatar: "/p5.avif"
     },
     relatedProjects: ["choolistan-wool-union"],
     featured: true,
@@ -1179,7 +1179,7 @@ const userRateLimiter = rateLimit({
     slug: "hospital-crisis-management-rescue", 
     excerpt: "The inside story of a technology crisis that threatened patient care and how we delivered the extraordinary—complete system replacement with zero downtime during full operations.",
     content: "# Crisis Call: When a Hospital's Technology Lifeline Failed\n\n**3:47 PM, Tuesday.** The call came through like a desperate SOS. A busy hospital's entire management system had crashed, their vendor had vanished, and the owner was leaving the country in just 6 weeks. Patients couldn't stop coming. Operations couldn't pause. The technology that kept everything running was dying.\n\nMost consultants would have walked away. I saw it as the ultimate professional challenge.\n\n## The Catastrophic Situation: Everything That Could Go Wrong\n\n### The Perfect Storm:\n- **Legacy Vendor Abandonment**: Previous technology provider suddenly stopped all support\n- **Performance Crisis**: Existing system causing operational bottlenecks affecting patient care\n- **Zero Technical Support**: Critical healthcare operations running without safety net\n- **Impossible Timeline**: 6 weeks for complete system overhaul with owner departure\n- **24/7 Operations**: Hospital couldn't stop functioning for even an hour\n- **Data Migration Nightmare**: Years of patient history requiring seamless transition\n\n## The Strategic Response: Crisis Management Excellence\n\n### Phase 1: Emergency Assessment (Week 1-2)\nWhile others would start coding immediately, I began with surgical precision:\n\n**Legacy System Archaeology:**\n- **Database Reverse Engineering**: Complete schema analysis without documentation\n- **Workflow Documentation**: Mapping every user interaction and business process\n- **Performance Bottleneck Analysis**: Identifying why the old system was failing\n- **Data Integrity Audit**: Ensuring zero patient record loss during transition\n- **Risk Assessment**: Every possible failure point and mitigation strategy\n\n**The Hidden Discovery:**\nThe failing system had corrupted data relationships that were causing cascade failures. This wasn't just a performance problem—it was a data integrity crisis waiting to explode.\n\n### Phase 2: Rapid Development with Zero-Risk Architecture (Week 3-5)\n\n**Technology Stack for Crisis Management:**\n- Framework: C# .NET Framework 4.8.1\n- ORM: Entity Framework 6.5.1 + Dapper (Dual strategy)\n- Database: SQL Server with Healthcare Optimization\n- Reports: Crystal Reports 13 - 35+ medical reports\n- Architecture: Generic Repository + Service Layer\n- Deployment: Parallel Running with Real-time Sync\n\n**The Innovation: Parallel System Strategy**\nInstead of replacing the old system, we ran both simultaneously:\n- **Data Synchronization**: Real-time bidirectional sync between old and new\n- **Gradual Migration**: Department-by-department transition\n- **Instant Rollback**: One-click return to legacy system if needed\n- **Performance Monitoring**: Live tracking of both systems\n\n## The Extraordinary Results: Beyond All Expectations\n\n### Immediate Crisis Resolution:\n- ✅ **95% Performance Improvement**: System response time dramatically improved\n- ✅ **Zero Downtime**: Complete replacement without patient care disruption\n- ✅ **100% Data Migration**: Full historical preservation with integrity verification\n- ✅ **35+ New Features**: Beyond original system capabilities\n- ✅ **80% Staff Productivity Increase**: Modernized workflows eliminating bottlenecks\n\n### Long-term Healthcare Impact:\n- **Patient Safety Enhancement**: Streamlined processes reducing medical errors\n- **Cost Reduction**: Eliminated vendor dependency and licensing fees\n- **Operational Excellence**: Real-time visibility into all hospital operations\n- **Future-Proof Foundation**: Scalable architecture for hospital growth\n\n## Crisis Management Lessons: What Separates Success from Failure\n\n### Emergency Response Protocol:\n- Assessment: Understand the real problem before coding\n- Risk Mitigation: Every decision has backup plan\n- Parallel Running: Never go all-in without safety net\n- Stakeholder Communication: Hourly updates during critical phases\n\n### Technology Decisions Under Pressure:\n- **Proven Stack Over Experimental**: Crisis isn't time for new technology\n- **Performance Over Features**: Speed of recovery trumps feature richness\n- **Data Integrity Above All**: Healthcare data loss is never acceptable\n- **Rollback Strategy**: Always have escape route\n\n## When Your Organization Faces Technology Crisis\n\n### Crisis Indicators:\n- **Vendor Abandonment**: Previous provider stops responding\n- **Performance Degradation**: System affecting daily operations\n- **Data Integrity Issues**: Corruption or inconsistency problems\n- **Compliance Risks**: Regulatory requirements not being met\n- **Impossible Timelines**: Business pressure for immediate resolution\n\n### Why Crisis Management Requires Specialists:\n\n**Technical Expertise:**\n- **Legacy System Analysis**: Reverse engineering without documentation\n- **Zero-Downtime Deployment**: Live system replacement strategies\n- **Data Migration Excellence**: Historical preservation with integrity verification\n- **Performance Optimization**: Dramatic improvement under time pressure\n\n**Crisis Leadership:**\n- **Stakeholder Management**: Keeping everyone calm and informed\n- **Risk Mitigation**: Multiple backup plans for every decision\n- **Timeline Management**: Delivering impossible deadlines reliably\n- **Quality Assurance**: No shortcuts that compromise long-term stability\n\n## Ready for Your Technology Crisis Resolution?\n\nWhen your organization faces a technology emergency, you need a partner who thrives under pressure and delivers extraordinary results.\n\n**Our Crisis Management Guarantee:**\n- **Emergency Response**: 24-hour assessment and action plan\n- **Zero Data Loss**: Complete historical preservation commitment\n- **Minimal Disruption**: Operations continue during transformation\n- **Performance Improvement**: Better than before crisis state\n- **Future Protection**: Scalable foundation preventing future crises\n\n### Current Crisis? Let's Talk Immediately.\n\nTechnology crises don't wait for convenient timing. Neither do we.\n\n**Emergency Consultation Available 24/7**\n\n[🚨 **Emergency Crisis Consultation** →](https://wa.me/923322060667?text=URGENT: We have a technology crisis that needs immediate attention. I saw your hospital system rescue case study and need emergency consultation.)",
-    featuredImage: "/hospital1.jpg",
+    featuredImage: "/hospital1.avif",
     publishDate: "2025-01-12",
     readTime: 10,
     category: blogCategories[4], // crisis-management
@@ -1959,7 +1959,7 @@ function useApi<T>(
 **Ready to Elevate Your React Development?**
 
 *Let's discuss how modern React patterns can transform your development process and application performance.*`,
-    featuredImage: "/hwelness1.jpg",
+    featuredImage: "/hwelness1.avif",
     publishDate: "2024-01-25",
     readTime: 18,
     author: {
@@ -2733,7 +2733,7 @@ const createServer = (database) => {
 **Ready to Build Enterprise-Grade Node.js Applications?**
 
 *Let's discuss how advanced Node.js architecture can power your next enterprise project.*`,
-    featuredImage: "/x21.jpg",
+    featuredImage: "/x21.avif",
     publishDate: "2024-01-30",
     readTime: 20,
     author: {
